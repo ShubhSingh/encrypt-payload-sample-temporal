@@ -80,4 +80,4 @@ how to run it after you've built it using the preceding instructions.
 
 As can be seen below input is in Encrypted JSON format and returned Result from Workflow is in decrypted JSON format. 
 
-![Temporal Web Output](example.png)
+![Temporal Web Output](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/resources/example.PNG)
