@@ -59,16 +59,15 @@ of details about the execution history.
 
 [Command Line Interface Documentation](https://docs.temporal.io/docs/tctl)
 
-## Samples
-
-This sample has specific requirements for running it. The following sections contain information about
-how to run it after you've built it using the preceding instructions.
-
 
 ### EncryptPayload
 
 EncryptPayload sample  demonstrates one feature of the SDK in a single file. Note that single file format is 
 used for sample brevity and is not something we recommend for real applications.
+
+This sample has specific requirements for running it. The following instructs about
+how to run it after you've built it using the preceding instructions.
+
 
   * **[EncryptPayloadActivity](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadActivity.java)**: a single activity workflow
    
