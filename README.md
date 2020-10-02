@@ -1,5 +1,6 @@
 # Java Hide Sensitive Info in Temporal Sample
 This sample demonstrate the way to encrypt Sensitive info when it passes through Java Temporal client and server.
+It utilizes Jackson Crypto to encrypt the sensitive UserInfo which needs to pass through temporal web and CLI.
 
 ## Setup
 
@@ -75,4 +76,8 @@ how to run it after you've built it using the preceding instructions.
   
       ./gradlew -q execute -PmainClass=io.temporal.samples.encryption.EncryptPayloadActivity
       
+### Output of executed Workflow in Temporal web
 
+As can be seen below input is in Encrypted JSON format and returned Result from Workflow is in decrypted JSON format. 
+
+![Temporal Web Output](example.png)
