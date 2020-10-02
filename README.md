@@ -70,7 +70,7 @@ how to run it after you've built it using the preceding instructions.
 EncryptPayload sample  demonstrates one feature of the SDK in a single file. Note that single file format is 
 used for sample brevity and is not something we recommend for real applications.
 
-  * **[EncryptPayloadActivity](https://github.com/temporalio/samples-java/blob/master/src/main/java/io/temporal/samples/encryption/EncryptPayloadActivity.java)**: a single activity workflow
+  * **[EncryptPayloadActivity](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadActivity.java)**: a single activity workflow
    
   To run this sample:
   
