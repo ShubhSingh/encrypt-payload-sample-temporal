@@ -6,6 +6,7 @@ import com.codingrodent.jackson.crypto.PasswordCryptoContext;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.uber.m3.util.ImmutableMap;
+import io.temporal.samples.model.Signup;
 import java.io.IOException;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -43,8 +43,8 @@ dependencies {
     // lombok dependency
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    testCompileOnly 'org.projectlombok:lombok:1.18.12'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    compile group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: '2.10.1'
 
     // dependencies added for jackson crypto
     compile group: 'com.codingrodent', name: 'jackson-json-crypto', version: '1.1.0'

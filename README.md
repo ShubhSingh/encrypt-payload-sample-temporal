@@ -20,8 +20,8 @@ To solve the problem add the following entries to your `/etc/hosts` file (where 
 
 Run the following commands:
 
-     git clone https://github.com/temporalio/samples-java
-     cd samples-java
+     git clone https://github.com/ShubhSingh/encrypt-payload-sample-temporal.git
+     cd encrypt-payload-sample-temporal
 
 ### Build the Samples
 
@@ -63,21 +63,27 @@ of details about the execution history.
 
 ### EncryptPayload
 
-EncryptPayload sample  demonstrates one feature of the SDK in a single file. Note that single file format is 
+EncryptPayload sample demonstrates one feature of the SDK in a single file. Note that single file format is 
 used for sample brevity and is not something we recommend for real applications.
 
 This sample has specific requirements for running it. The following instructs about
 how to run it after you've built it using the preceding instructions.
 
-
-  * **[EncryptPayloadActivity](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadActivity.java)**: a single activity workflow
+  * **[ConverterApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/dataconverter/ConverterApp.java)**: a single activity workflow which demonstrates usage of Custom DataConverter for encrypting and decrypting passing through temporal
+  * **[EncryptPayloadApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadApp.java)**: a single activity workflow which demonstrates a BAD way to use EncryptionUtil to encrypt and decrypt data passing through temporal
    
-  To run this sample:
-  
-      ./gradlew -q execute -PmainClass=io.temporal.samples.encryption.EncryptPayloadActivity
+  To run these samples:
+      ./gradlew -q execute -PmainClass=io.temporal.samples.dataconverter.ConverterApp
+      ./gradlew -q execute -PmainClass=io.temporal.samples.encryption.EncryptPayloadApp
       
-### Output of executed Workflow in Temporal web
+### Output of executed ConverterApp in Temporal web
 
-As can be seen below input is in Encrypted JSON format and returned Result from Workflow is in decrypted JSON format. 
+As can be seen below "input" and "result" both are in the Encrypted JSON format.
 
-![Temporal Web Output](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/resources/example.PNG)
+![Temporal Web Output for ConverterApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/resources/example-converter.PNG)
+      
+### Output of executed EncryptPayloadApp in Temporal web
+
+As can be seen below "input" is in the Encrypted JSON format and returned "result" from Workflow is in the decrypted JSON format. 
+
+![Temporal Web Output for EncryptPayloadApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/resources/example.PNG)
