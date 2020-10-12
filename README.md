@@ -61,7 +61,7 @@ of details about the execution history.
 [Command Line Interface Documentation](https://docs.temporal.io/docs/tctl)
 
 
-### EncryptPayload
+## EncryptPayload
 
 EncryptPayload sample demonstrates one feature of the SDK in a single file. Note that single file format is 
 used for sample brevity and is not something we recommend for real applications.
