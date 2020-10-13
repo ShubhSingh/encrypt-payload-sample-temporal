@@ -6,7 +6,7 @@ import io.temporal.activity.ActivityMethod;
 import io.temporal.activity.ActivityOptions;
 import io.temporal.client.WorkflowClient;
 import io.temporal.client.WorkflowOptions;
-import io.temporal.samples.dataconverter.CustomJsonEncryptPayloadConverter;
+import io.temporal.samples.dataconverter.CustomDataConverter;
 import io.temporal.samples.model.Signup;
 import io.temporal.samples.model.UserInfo;
 import io.temporal.serviceclient.WorkflowServiceStubs;
@@ -25,10 +25,10 @@ import org.slf4j.LoggerFactory;
  *
  * <p>This app uses BAD practice and implements encryption code in workflows and activities.
  *
- * <p>A better and best practice is to use a {@link
- * io.temporal.samples.dataconverter.CustomDataConverter} and include encryption code in {@link
- * CustomJsonEncryptPayloadConverter}. Run {@link io.temporal.samples.dataconverter.ConverterApp} to
- * see simpler design to encrypt and decrypt data passing through temporal.
+ * <p>A better and best practice is to use a {@link CustomDataConverter} and include encryption code
+ * in {@link com.fasterxml.jackson.databind.ObjectMapper}. Run {@link
+ * io.temporal.samples.dataconverter.ConverterApp} to see simpler design to encrypt and decrypt data
+ * passing through temporal.
  */
 public class EncryptPayloadApp {
 

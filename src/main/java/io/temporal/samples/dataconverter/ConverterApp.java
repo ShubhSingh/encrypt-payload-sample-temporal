@@ -23,9 +23,10 @@ import org.slf4j.LoggerFactory;
  * be running.
  *
  * <p>This app uses a {@link CustomDataConverter} that overrides {@link
- * io.temporal.common.converter.DefaultDataConverter} and instead of {@link
- * io.temporal.common.converter.JacksonJsonPayloadConverter} it uses a {@link
- * CustomJsonEncryptPayloadConverter} where encryption code using Jackson Crypto is written.
+ * io.temporal.common.converter.DefaultDataConverter} and instead of default constructor of {@link
+ * io.temporal.common.converter.JacksonJsonPayloadConverter} it overrides the {@link
+ * com.fasterxml.jackson.databind.ObjectMapper} where encryption code using Jackson Crypto is
+ * written.
  */
 public class ConverterApp {
 
