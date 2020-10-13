@@ -69,8 +69,8 @@ used for sample brevity and is not something we recommend for real applications.
 This sample has specific requirements for running it. The following instructs about
 how to run it after you've built it using the preceding instructions.
 
-  * **[ConverterApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/dataconverter/ConverterApp.java)**: a single activity workflow which demonstrates usage of Custom DataConverter for encrypting and decrypting passing through temporal
-  * **[EncryptPayloadApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadApp.java)**: a single activity workflow which demonstrates a BAD way to use EncryptionUtil to encrypt and decrypt data passing through temporal
+  * **[ConverterApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/dataconverter/ConverterApp.java)**: a single activity workflow which demonstrates usage of Custom DataConverter to encrypt and decrypt data passing through temporal web and CLI
+  * **[EncryptPayloadApp](https://github.com/ShubhSingh/encrypt-payload-sample-temporal/blob/main/src/main/java/io/temporal/samples/encryption/EncryptPayloadApp.java)**: a single activity workflow which demonstrates a BAD way to use EncryptionUtil to encrypt and decrypt data passing through temporal web and CLI
    
   To run these samples:
       ./gradlew -q execute -PmainClass=io.temporal.samples.dataconverter.ConverterApp
